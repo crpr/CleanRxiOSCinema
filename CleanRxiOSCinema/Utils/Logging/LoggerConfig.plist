@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LogLevel</key>
+	<string>Debug</string>
+	<key>DisplayThreadName</key>
+	<false/>
+	<key>DisplayLogLevel</key>
+	<true/>
+	<key>DisplayFileName</key>
+	<true/>
+	<key>DisplayLineNumbers</key>
+	<true/>
+	<key>WriteAtFile</key>
+	<string></string>
+	<key>FileLogLevel</key>
+	<string>None</string>
+</dict>
+</plist>

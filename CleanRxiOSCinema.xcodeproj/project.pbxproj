@@ -7,12 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7304D60D1E15C77900AC128B /* ApiConfigurationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304D60B1E15C77900AC128B /* ApiConfigurationResponse.swift */; };
+		7304D60E1E15C77900AC128B /* ApiConfigurationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304D60B1E15C77900AC128B /* ApiConfigurationResponse.swift */; };
+		7304D60F1E15C77900AC128B /* ApiSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304D60C1E15C77900AC128B /* ApiSize.swift */; };
+		7304D6101E15C77900AC128B /* ApiSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304D60C1E15C77900AC128B /* ApiSize.swift */; };
+		7304D6121E15CA1D00AC128B /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304D6111E15CA1D00AC128B /* ConfigurationManager.swift */; };
+		7304D6131E15CA1D00AC128B /* ConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304D6111E15CA1D00AC128B /* ConfigurationManager.swift */; };
+		7304D6181E15CDDE00AC128B /* CinemaLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304D6161E15CDDE00AC128B /* CinemaLogger.swift */; };
+		7304D6191E15CDDE00AC128B /* CinemaLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304D6161E15CDDE00AC128B /* CinemaLogger.swift */; };
+		7304D61A1E15CDDE00AC128B /* LoggerConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7304D6171E15CDDE00AC128B /* LoggerConfig.plist */; };
+		7304D61B1E15CDDE00AC128B /* LoggerConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7304D6171E15CDDE00AC128B /* LoggerConfig.plist */; };
 		731332D31E1573E5002AE7D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731332D21E1573E5002AE7D3 /* AppDelegate.swift */; };
 		731332D51E1573E5002AE7D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731332D41E1573E5002AE7D3 /* ViewController.swift */; };
 		731332D81E1573E5002AE7D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731332D61E1573E5002AE7D3 /* Main.storyboard */; };
 		731332DA1E1573E5002AE7D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731332D91E1573E5002AE7D3 /* Assets.xcassets */; };
 		731332DD1E1573E5002AE7D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731332DB1E1573E5002AE7D3 /* LaunchScreen.storyboard */; };
 		731332E81E1573E5002AE7D3 /* CleanRxiOSCinemaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731332E71E1573E5002AE7D3 /* CleanRxiOSCinemaTests.swift */; };
+		731332FD1E157934002AE7D3 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731332FC1E157934002AE7D3 /* ConfigurationService.swift */; };
+		731332FE1E157934002AE7D3 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731332FC1E157934002AE7D3 /* ConfigurationService.swift */; };
+		73FD951A1E15E00D00D8B6D5 /* ApiImagesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FD95191E15E00D00D8B6D5 /* ApiImagesConfiguration.swift */; };
+		73FD951B1E15E00D00D8B6D5 /* ApiImagesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FD95191E15E00D00D8B6D5 /* ApiImagesConfiguration.swift */; };
+		B499F7B5EC25822F25EA9EFE /* Pods_CleanRxiOSCinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D8FDE55494D8CE72A839E5 /* Pods_CleanRxiOSCinema.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D5FB64733C9D11D2B88CCFF /* Pods-CleanRxiOSCinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanRxiOSCinema.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleanRxiOSCinema/Pods-CleanRxiOSCinema.release.xcconfig"; sourceTree = "<group>"; };
+		7304D60B1E15C77900AC128B /* ApiConfigurationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiConfigurationResponse.swift; path = ../Models/Configuration/ApiConfigurationResponse.swift; sourceTree = "<group>"; };
+		7304D60C1E15C77900AC128B /* ApiSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiSize.swift; sourceTree = "<group>"; };
+		7304D6111E15CA1D00AC128B /* ConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigurationManager.swift; path = CleanRxiOSCinema/Data/Api/Managers/ConfigurationManager.swift; sourceTree = SOURCE_ROOT; };
+		7304D6161E15CDDE00AC128B /* CinemaLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CinemaLogger.swift; sourceTree = "<group>"; };
+		7304D6171E15CDDE00AC128B /* LoggerConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LoggerConfig.plist; sourceTree = "<group>"; };
 		731332CF1E1573E5002AE7D3 /* CleanRxiOSCinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanRxiOSCinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		731332D21E1573E5002AE7D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		731332D41E1573E5002AE7D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +57,10 @@
 		731332E31E1573E5002AE7D3 /* CleanRxiOSCinemaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanRxiOSCinemaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		731332E71E1573E5002AE7D3 /* CleanRxiOSCinemaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanRxiOSCinemaTests.swift; sourceTree = "<group>"; };
 		731332E91E1573E5002AE7D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		731332FC1E157934002AE7D3 /* ConfigurationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
+		73FD95191E15E00D00D8B6D5 /* ApiImagesConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiImagesConfiguration.swift; sourceTree = "<group>"; };
+		ABE054055A13F0A1F1495B19 /* Pods-CleanRxiOSCinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanRxiOSCinema.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleanRxiOSCinema/Pods-CleanRxiOSCinema.debug.xcconfig"; sourceTree = "<group>"; };
+		C0D8FDE55494D8CE72A839E5 /* Pods_CleanRxiOSCinema.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanRxiOSCinema.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B499F7B5EC25822F25EA9EFE /* Pods_CleanRxiOSCinema.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,11 +82,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7304D6041E15C62200AC128B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				73FD95191E15E00D00D8B6D5 /* ApiImagesConfiguration.swift */,
+				7304D60C1E15C77900AC128B /* ApiSize.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		7304D6141E15CDBA00AC128B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7304D6151E15CDCB00AC128B /* Logging */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7304D6151E15CDCB00AC128B /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				7304D6161E15CDDE00AC128B /* CinemaLogger.swift */,
+				7304D6171E15CDDE00AC128B /* LoggerConfig.plist */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
 		731332C61E1573E5002AE7D3 = {
 			isa = PBXGroup;
 			children = (
 				731332D11E1573E5002AE7D3 /* CleanRxiOSCinema */,
 				731332E61E1573E5002AE7D3 /* CleanRxiOSCinemaTests */,
+				D92DABCFAEEA07D24096975D /* Frameworks */,
+				B9D5CD088A7B09CFFC0952FA /* Pods */,
 				731332D01E1573E5002AE7D3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,11 +132,15 @@
 			isa = PBXGroup;
 			children = (
 				731332D21E1573E5002AE7D3 /* AppDelegate.swift */,
-				731332D41E1573E5002AE7D3 /* ViewController.swift */,
-				731332D61E1573E5002AE7D3 /* Main.storyboard */,
 				731332D91E1573E5002AE7D3 /* Assets.xcassets */,
-				731332DB1E1573E5002AE7D3 /* LaunchScreen.storyboard */,
+				731332F51E1577BB002AE7D3 /* Data */,
+				731332F41E1577B5002AE7D3 /* Domain */,
 				731332DE1E1573E5002AE7D3 /* Info.plist */,
+				731332DB1E1573E5002AE7D3 /* LaunchScreen.storyboard */,
+				731332D61E1573E5002AE7D3 /* Main.storyboard */,
+				731332F61E1577C1002AE7D3 /* Presentation */,
+				7304D6141E15CDBA00AC128B /* Utils */,
+				731332D41E1573E5002AE7D3 /* ViewController.swift */,
 			);
 			path = CleanRxiOSCinema;
 			sourceTree = "<group>";
@@ -96,6 +154,105 @@
 			path = CleanRxiOSCinemaTests;
 			sourceTree = "<group>";
 		};
+		731332F41E1577B5002AE7D3 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				731332FF1E1579AB002AE7D3 /* Common */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		731332F51E1577BB002AE7D3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				731332F71E15785E002AE7D3 /* Api */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		731332F61E1577C1002AE7D3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		731332F71E15785E002AE7D3 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				731332F91E157876002AE7D3 /* Managers */,
+				731332FA1E15787C002AE7D3 /* Models */,
+				731332FB1E157885002AE7D3 /* Responses */,
+				731332F81E15786F002AE7D3 /* Services */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		731332F81E15786F002AE7D3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				731332FC1E157934002AE7D3 /* ConfigurationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		731332F91E157876002AE7D3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				7304D6111E15CA1D00AC128B /* ConfigurationManager.swift */,
+			);
+			name = Managers;
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		731332FA1E15787C002AE7D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7304D6041E15C62200AC128B /* Configuration */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		731332FB1E157885002AE7D3 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				7304D60B1E15C77900AC128B /* ApiConfigurationResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		731332FF1E1579AB002AE7D3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				731333001E1579BB002AE7D3 /* Configuration */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		731333001E1579BB002AE7D3 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		B9D5CD088A7B09CFFC0952FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABE054055A13F0A1F1495B19 /* Pods-CleanRxiOSCinema.debug.xcconfig */,
+				3D5FB64733C9D11D2B88CCFF /* Pods-CleanRxiOSCinema.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D92DABCFAEEA07D24096975D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0D8FDE55494D8CE72A839E5 /* Pods_CleanRxiOSCinema.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +260,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 731332EC1E1573E5002AE7D3 /* Build configuration list for PBXNativeTarget "CleanRxiOSCinema" */;
 			buildPhases = (
+				CE54B123A72A59FF6EE28CD5 /* [CP] Check Pods Manifest.lock */,
 				731332CB1E1573E5002AE7D3 /* Sources */,
 				731332CC1E1573E5002AE7D3 /* Frameworks */,
 				731332CD1E1573E5002AE7D3 /* Resources */,
+				74FA9C7A6362F12C244F10DB /* [CP] Embed Pods Frameworks */,
+				812A8D26449D49C2F96D587D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -183,6 +343,7 @@
 			files = (
 				731332DD1E1573E5002AE7D3 /* LaunchScreen.storyboard in Resources */,
 				731332DA1E1573E5002AE7D3 /* Assets.xcassets in Resources */,
+				7304D61A1E15CDDE00AC128B /* LoggerConfig.plist in Resources */,
 				731332D81E1573E5002AE7D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,18 +352,73 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7304D61B1E15CDDE00AC128B /* LoggerConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74FA9C7A6362F12C244F10DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CleanRxiOSCinema/Pods-CleanRxiOSCinema-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		812A8D26449D49C2F96D587D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CleanRxiOSCinema/Pods-CleanRxiOSCinema-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE54B123A72A59FF6EE28CD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		731332CB1E1573E5002AE7D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7304D60F1E15C77900AC128B /* ApiSize.swift in Sources */,
 				731332D51E1573E5002AE7D3 /* ViewController.swift in Sources */,
+				7304D6121E15CA1D00AC128B /* ConfigurationManager.swift in Sources */,
+				731332FD1E157934002AE7D3 /* ConfigurationService.swift in Sources */,
+				7304D6181E15CDDE00AC128B /* CinemaLogger.swift in Sources */,
 				731332D31E1573E5002AE7D3 /* AppDelegate.swift in Sources */,
+				7304D60D1E15C77900AC128B /* ApiConfigurationResponse.swift in Sources */,
+				73FD951A1E15E00D00D8B6D5 /* ApiImagesConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +426,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7304D6191E15CDDE00AC128B /* CinemaLogger.swift in Sources */,
+				73FD951B1E15E00D00D8B6D5 /* ApiImagesConfiguration.swift in Sources */,
+				7304D6131E15CA1D00AC128B /* ConfigurationManager.swift in Sources */,
+				731332FE1E157934002AE7D3 /* ConfigurationService.swift in Sources */,
+				7304D6101E15C77900AC128B /* ApiSize.swift in Sources */,
 				731332E81E1573E5002AE7D3 /* CleanRxiOSCinemaTests.swift in Sources */,
+				7304D60E1E15C77900AC128B /* ApiConfigurationResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,7 +559,9 @@
 		};
 		731332ED1E1573E5002AE7D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABE054055A13F0A1F1495B19 /* Pods-CleanRxiOSCinema.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RY5H3SA37H;
 				INFOPLIST_FILE = CleanRxiOSCinema/Info.plist;
@@ -350,7 +574,9 @@
 		};
 		731332EE1E1573E5002AE7D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D5FB64733C9D11D2B88CCFF /* Pods-CleanRxiOSCinema.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RY5H3SA37H;
 				INFOPLIST_FILE = CleanRxiOSCinema/Info.plist;
@@ -410,6 +636,7 @@
 				731332EE1E1573E5002AE7D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		731332EF1E1573E5002AE7D3 /* Build configuration list for PBXNativeTarget "CleanRxiOSCinemaTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +645,7 @@
 				731332F11E1573E5002AE7D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

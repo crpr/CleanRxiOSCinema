@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ConfigurationService.baseURL.getter:ConfigurationService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "2 == 2">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ConfigurationManager.requestObject&lt;A where ...&gt; (ConfigurationService, type : A.Type, completion : (A?) -&gt; (), additionalSteps : () -&gt; ()?) -&gt; ():ConfigurationManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "1 == 2">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ConfigurationService.authParameters() -&gt; [String : String]:ConfigurationService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "CinemaAPIConfig">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ConfigurationManager.init() -&gt; ConfigurationManager:ConfigurationManager.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
