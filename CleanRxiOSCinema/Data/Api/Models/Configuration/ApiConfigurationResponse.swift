@@ -10,10 +10,9 @@ import Foundation
 import ObjectMapper
 
 struct ApiConfigurationResponse {
-    var images_configuration: ApiImagesConfiguration = ApiImagesConfiguration()
+    var images_configuration: ApiImagesConfiguration?
     var change_keys: [String] = []
 }
-
 
 extension ApiConfigurationResponse: Mappable {
     init?(map: Map) {}

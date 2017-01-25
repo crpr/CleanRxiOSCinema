@@ -1,0 +1,26 @@
+# More documentation about how to customize your build
+# can be found here:
+# https://docs.fastlane.tools
+fastlane_version "1.109.0"
+
+# This value helps us track success metrics for Fastfiles
+# we automatically generate. Feel free to remove this line
+# once you get things running smoothly!
+generated_fastfile_id "f29e72c3-4881-4ebf-b331-86200e46a7bb"
+
+default_platform :ios
+
+platform :ios do
+
+  desc "Runs all the tests"
+  lane :test do
+    scan(scheme: "CleanRxiOSCinema")
+    slather(
+      output_directory: "coverage",
+      workspace: "CleanRxiOSCinema.xcworkspace",
+      scheme: "CleanRxiOSCinema",
+      proj: "CleanRxiOSCinema.xcodeproj",
+      html: true
+    )
+  end
+end

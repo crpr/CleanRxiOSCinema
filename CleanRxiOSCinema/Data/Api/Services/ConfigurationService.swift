@@ -12,11 +12,6 @@ import CryptoSwift
 import Dollar
 import Keys
 
-fileprivate struct CinemaAPIConfig {
-    fileprivate static let keys = CleanrxioscinemaKeys()
-    static let apikey = keys.cinemaApiKey()!
-}
-
 enum ConfigurationService {
     case configuration()
 }
@@ -42,7 +37,7 @@ extension ConfigurationService: TargetType {
     }
     
     func authParameters() -> [String: String] {
-        return ["api_key": CleanrxioscinemaKeys().cinemaApiKey().apikey]
+        return ["api_key": CleanRxiOSCinemaKeys().cinemaApiKey]
     }
     
     var parameters: [String: Any]? {

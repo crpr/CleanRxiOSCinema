@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import Moya
 
 class ViewController: UIViewController {
     
@@ -15,21 +16,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
-        let manager = ConfigurationManager();
+        let process = GetConfigurationProcess(manager: ApiContainer.getResolver().resolve(ConfigurationManager.self)!);
         
-        manager.configuration()
+        process.getConfiguration()
             .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
-            .flatMap { response -> Observable<String> in {
-                self.convert(response: response);
+            .flatMap { result -> Observable<Int> in {
+                self.convert(result: result);
                 }()
             }
             .observeOn(MainScheduler.instance)
             .subscribe { event -> Void in
                 switch event {
-                case .next(let baseUrl):
-                    CinemaLogger.sharedInstance.debug(baseUrl);
+                case .next(let responseStatus):
+                    CinemaLogger.sharedInstance.debug(responseStatus);
                 case .error(let error):
                     print(error)
                 default:
@@ -38,12 +38,8 @@ class ViewController: UIViewController {
             }.addDisposableTo(disposeBag)
     }
     
-    func convert(response: ApiConfigurationResponse) -> Observable<String> {
-        return Observable.just(self.extractFrom(response: response));
-    }
-    
-    func extractFrom(response: ApiConfigurationResponse) -> String {
-        return response.images_configuration.base_url
+    func convert(result: Result) -> Observable<Int> {
+        return Observable.just(result.resultStatusCode.rawValue);
     }
 
     override func didReceiveMemoryWarning() {

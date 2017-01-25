@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         CinemaLogger.sharedInstance;
         
+        ApiContainer.setup();
+        
         return true
     }
 

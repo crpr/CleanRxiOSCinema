@@ -15,8 +15,8 @@ import Moya_ObjectMapper
 struct ConfigurationManager {
     let provider: MoyaProvider<ConfigurationService>
     
-    init() {
-        provider = MoyaProvider<ConfigurationService>()
+    init(provider: MoyaProvider<ConfigurationService>) {
+        self.provider = provider
     }
 }
 

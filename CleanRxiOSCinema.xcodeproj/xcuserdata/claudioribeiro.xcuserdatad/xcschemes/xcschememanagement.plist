@@ -6,12 +6,26 @@
 	<dict>
 		<key>CleanRxiOSCinema.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>CleanRxiOSCinemaTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>19</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>73005C6D1E226811000240C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>731332CE1E1573E5002AE7D3</key>
 		<dict>
 			<key>primary</key>
