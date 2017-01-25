@@ -21,9 +21,9 @@ extension GetConfigurationProcess {
     
     func getConfiguration() -> Observable<Result> {
         return manager.configuration()
-            .flatMap { config -> Observable<Result> in
-                self.configureImageUrlProvider(config: config);
-        }
+                        .flatMap { config -> Observable<Result> in
+                            self.configureImageUrlProvider(config: config);
+                        }
     }
     
     fileprivate func configureImageUrlProvider(config: ApiConfigurationResponse) -> Observable<Result> {

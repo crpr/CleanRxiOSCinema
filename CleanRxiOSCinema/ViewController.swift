@@ -17,18 +17,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let process = GetConfigurationProcess(manager: ApiContainer.getResolver().resolve(ConfigurationManager.self)!);
+        let interactor = SplashInteractor.init(mainThread: MainScheduler.instance,
+                                               backgroundThread: ConcurrentDispatchQueueScheduler(qos: .background),
+                                               process: ApiContainer.getResolver().resolve(GetConfigurationProcess.self)!)
         
-        process.getConfiguration()
-            .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .background))
-            .flatMap { result -> Observable<Int> in {
-                self.convert(result: result);
-                }()
-            }
-            .observeOn(MainScheduler.instance)
+        interactor.start()
             .subscribe { event -> Void in
                 switch event {
                 case .next(let responseStatus):
+                    CinemaLogger.sharedInstance.debug("SUCCESS");
                     CinemaLogger.sharedInstance.debug(responseStatus);
                 case .error(let error):
                     print(error)
@@ -36,10 +33,6 @@ class ViewController: UIViewController {
                     break
                 }
             }.addDisposableTo(disposeBag)
-    }
-    
-    func convert(result: Result) -> Observable<Int> {
-        return Observable.just(result.resultStatusCode.rawValue);
     }
 
     override func didReceiveMemoryWarning() {

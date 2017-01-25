@@ -23,7 +23,6 @@ class ApiContainer {
             ConfigurationManager(provider: container.resolve(MoyaProvider<ConfigurationService>.self)!);
         }
 
-        
         container.register(GetConfigurationProcess.self) { _ in
             GetConfigurationProcess(manager: container.resolve(ConfigurationManager.self)!);
         }
