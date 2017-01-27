@@ -40,5 +40,6 @@ target 'CleanRxiOSCinemaTests' do
     pod 'XCGLogger', '~> 4.0.0'
     pod 'Moya', '8.0.0-beta.6'
     pod 'Swinject', '2.0.0'
+    pod 'RxTest'
     
 end

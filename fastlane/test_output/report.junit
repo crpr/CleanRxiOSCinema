@@ -1,6 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='CleanRxiOSCinemaTests.xctest' tests='1' failures='0'>
-  <testsuite name='CleanRxiOSCinemaTests.FirstSpec' tests='1' failures='0'>
-    <testcase classname='CleanRxiOSCinemaTests.FirstSpec' name='First_simple_spec__should_be_true' time='0.002'/>
+<testsuites name='CleanRxiOSCinemaTests.xctest' tests='11' failures='0'>
+  <testsuite name='CleanRxiOSCinemaTests.ApiImagesConfigurationTests' tests='7' failures='0'>
+    <testcase classname='CleanRxiOSCinemaTests.ApiImagesConfigurationTests' name='a_valid_ApiImagesConfiguration_Model__should_be_able_to_create_a_valid_ApiImagesConfiguration_from_json' time='0.006'/>
+    <testcase classname='CleanRxiOSCinemaTests.ApiImagesConfigurationTests' name='a_valid_ApiImagesConfiguration_Model__should_have_a_baseUrl' time='0.001'/>
+    <testcase classname='CleanRxiOSCinemaTests.ApiImagesConfigurationTests' name='a_valid_ApiImagesConfiguration_Model__should_have_four_backdrop_sizes' time='0.001'/>
+    <testcase classname='CleanRxiOSCinemaTests.ApiImagesConfigurationTests' name='a_valid_ApiImagesConfiguration_Model__should_have_seven_logo_sizes' time='0.001'/>
+    <testcase classname='CleanRxiOSCinemaTests.ApiImagesConfigurationTests' name='a_valid_ApiImagesConfiguration_Model__should_have_seven_poster_sizes' time='0.001'/>
+    <testcase classname='CleanRxiOSCinemaTests.ApiImagesConfigurationTests' name='a_valid_ApiImagesConfiguration_Model__should_have_four_profile_sizes' time='0.001'/>
+    <testcase classname='CleanRxiOSCinemaTests.ApiImagesConfigurationTests' name='a_valid_ApiImagesConfiguration_Model__should_have_four_still_sizes' time='0.001'/>
+  </testsuite>
+  <testsuite name='CleanRxiOSCinemaTests.ConfigurationManagerTests' tests='2' failures='0'>
+    <testcase classname='CleanRxiOSCinemaTests.ConfigurationManagerTests' name='fetch_configuration_with_success__should_be_able_to_init_a_configuration_manager' time='0.001'/>
+    <testcase classname='CleanRxiOSCinemaTests.ConfigurationManagerTests' name='fetch_configuration_with_success__should_receive_a_valid_ApiConfigurationResponse_from_Api_Manager' time='0.011'/>
+  </testsuite>
+  <testsuite name='CleanRxiOSCinemaTests.GetConfigurationProcessTests' tests='2' failures='0'>
+    <testcase classname='CleanRxiOSCinemaTests.GetConfigurationProcessTests' name='a_valid_configuration_process__should_be_able_to_init_a_GetConfigurationProcess' time='0.002'/>
+    <testcase classname='CleanRxiOSCinemaTests.GetConfigurationProcessTests' name='a_valid_configuration_process__should_receive_success_result_from_getConfiguration_process' time='0.004'/>
   </testsuite>
 </testsuites>

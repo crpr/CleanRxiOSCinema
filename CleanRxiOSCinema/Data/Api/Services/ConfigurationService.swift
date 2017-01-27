@@ -53,8 +53,18 @@ extension ConfigurationService: TargetType {
     
     var sampleData: Data {
         switch self {
+        case .configuration:
+            return stubbedResponse("api_configuration_response");
         default:
             return Data()
         }
+    }
+    
+    func stubbedResponse(_ filename: String) -> Data! {
+        @objc class TestClass: NSObject { }
+        
+        let bundle = Bundle(for: TestClass.self)
+        let path = bundle.path(forResource: filename, ofType: "json")
+        return (try? Data(contentsOf: URL(fileURLWithPath: path!)))
     }
 }

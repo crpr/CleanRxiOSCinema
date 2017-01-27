@@ -3,6 +3,22 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "GetConfigurationProcessTests.(spec() -&gt; ()).(closure #1).(closure #2):GetConfigurationProcessTests.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "expect(results.events[0].value.element?.resultStatusCode.rawValue).to(equal(ResultStatus.ok.rawValue)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ConfigurationService.sampleData.getter:ConfigurationService.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ConfigurationService.baseURL.getter:ConfigurationService.swift">
          <PersistentStrings>
             <PersistentString
@@ -14,6 +30,14 @@
          contextName = "FixtureLoader.map&lt;A where ...&gt; (to : A.Type) -&gt; A?:FixtureLoader.swift">
       </ContextState>
       <ContextState
+         contextName = "FixtureLoader.init(file : String, withExtension : String, in : Bundle) -&gt; FixtureLoader?:FixtureLoader.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSString(data: data, encoding: NSUTF8StringEncoding.rawValue) as? String">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "ConfigurationService.authParameters() -&gt; [String : String]:ConfigurationService.swift">
          <PersistentStrings>
             <PersistentString
@@ -23,25 +47,6 @@
       </ContextState>
       <ContextState
          contextName = "ConfigurationManager.init() -&gt; ConfigurationManager:ConfigurationManager.swift">
-      </ContextState>
-      <ContextState
-         contextName = "FixtureLoader.init(file : String, withExtension : String, in : Bundle) -&gt; FixtureLoader?:FixtureLoader.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "NSString(data: data, encoding: NSUTF8StringEncoding.rawValue) as? String">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ApiImagesConfiguration.mapping(map : Map) -&gt; ():ApiImagesConfiguration.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "map[&quot;base_url&quot;]">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "ApiImagesConfigurationTests.(spec() -&gt; ()).(closure #1):ApiImagesConfigurationTests.swift">
       </ContextState>
       <ContextState
          contextName = "ConfigurationManager.requestObject&lt;A where ...&gt; (ConfigurationService, type : A.Type, completion : (A?) -&gt; (), additionalSteps : () -&gt; ()?) -&gt; ():ConfigurationManager.swift">

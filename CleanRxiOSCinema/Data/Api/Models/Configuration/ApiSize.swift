@@ -9,15 +9,15 @@
 import Foundation
 
 enum ApiSize : String {
-    case W45 = "w45"
-    case W92 = "w92"
-    case W154 = "w154"
-    case W185 = "w185"
-    case W300 = "w300"
-    case W342 = "w342"
-    case W500 = "w500"
-    case H632 = "h632"
-    case W780 = "w780"
-    case W1280 = "w1280"
-    case ORIGINAL = "original"
+    case w45 = "w45"
+    case w92 = "w92"
+    case w154 = "w154"
+    case w185 = "w185"
+    case w300 = "w300"
+    case w342 = "w342"
+    case w500 = "w500"
+    case h632 = "h632"
+    case w780 = "w780"
+    case w1280 = "w1280"
+    case original = "original"
 }

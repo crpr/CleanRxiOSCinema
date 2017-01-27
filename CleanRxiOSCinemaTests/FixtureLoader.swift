@@ -39,4 +39,7 @@ extension FixtureLoader {
         return Mapper<T>().map(JSONString: json)
     }
     
+    func getJsonData() -> Data {
+        return data;
+    }
 }

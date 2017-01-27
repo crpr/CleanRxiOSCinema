@@ -37,19 +37,19 @@ class ApiImagesConfigurationTests: QuickSpec {
             }
             
             it("should have seven logo sizes") {
-                expect(model.logo_sizes.count).to(be(7))
+                expect(model.logo_sizes.count).to(equal(7))
             }
             
             it("should have seven poster sizes") {
-                expect(model.poster_sizes.count).to(be(7))
+                expect(model.poster_sizes.count).to(equal(7))
             }
             
             it("should have four profile sizes") {
-                expect(model.profile_sizes.count).to(be(4))
+                expect(model.profile_sizes.count).to(equal(4))
             }
             
             it("should have four still sizes") {
-                expect(model.still_sizes.count).to(be(4))
+                expect(model.still_sizes.count).to(equal(4))
             }
         }
         
