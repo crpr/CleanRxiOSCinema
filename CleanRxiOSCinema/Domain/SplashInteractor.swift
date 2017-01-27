@@ -9,11 +9,15 @@
 import Foundation
 import RxSwift
 
-class SplashInteractor : Interactor {
-    
-    var process: GetConfigurationProcess?;
+protocol SplashInteractorProtocol {
+    func start() -> Observable<Int>;
+}
 
-    init(mainThread: SchedulerType, backgroundThread: SchedulerType, process: GetConfigurationProcess) {
+class SplashInteractor : Interactor, SplashInteractorProtocol {
+    
+    var process: GetConfigurationProcessProtocol?;
+
+    init(mainThread: SchedulerType, backgroundThread: DispatchQoS, process: GetConfigurationProcessProtocol) {
         super.init(mainThread: mainThread, backgroundThread: backgroundThread);
         self.process = process;
     }
@@ -28,7 +32,7 @@ class SplashInteractor : Interactor {
             .observeOn(self.mainThread))!
     }
     
-    func convert(result: Result) -> Observable<Int> {
+    fileprivate func convert(result: Result) -> Observable<Int> {
         return Observable.just(result.resultStatusCode.rawValue);
     }
     

@@ -14,8 +14,8 @@ class Interactor {
     let mainThread: SchedulerType;
     let backgroundThread: SchedulerType;
     
-    init(mainThread: SchedulerType, backgroundThread: SchedulerType) {
+    init(mainThread: SchedulerType, backgroundThread: DispatchQoS) {
         self.mainThread = mainThread;
-        self.backgroundThread = backgroundThread;
+        self.backgroundThread = ConcurrentDispatchQueueScheduler(qos: backgroundThread);
     }
 }

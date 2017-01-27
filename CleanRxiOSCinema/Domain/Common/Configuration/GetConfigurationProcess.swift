@@ -9,10 +9,14 @@
 import Foundation
 import RxSwift
 
-struct GetConfigurationProcess {
-    let manager: ConfigurationManager;
+protocol GetConfigurationProcessProtocol {
+    func getConfiguration() -> Observable<Result>;
+}
+
+struct GetConfigurationProcess : GetConfigurationProcessProtocol {
+    let manager: ConfigurationManagerProtocol;
     
-    init(manager: ConfigurationManager) {
+    init(manager: ConfigurationManagerProtocol) {
         self.manager = manager;
     }
 }

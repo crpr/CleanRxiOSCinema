@@ -12,7 +12,11 @@ import Moya
 import ObjectMapper
 import Moya_ObjectMapper
 
-struct ConfigurationManager {
+protocol ConfigurationManagerProtocol {
+    func configuration() -> Observable<ApiConfigurationResponse>;
+}
+
+struct ConfigurationManager : ConfigurationManagerProtocol {
     let provider: MoyaProvider<ConfigurationService>
     
     init(provider: MoyaProvider<ConfigurationService>) {
