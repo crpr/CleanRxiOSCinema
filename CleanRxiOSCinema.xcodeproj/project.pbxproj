@@ -19,12 +19,12 @@
 		7304D61A1E15CDDE00AC128B /* LoggerConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7304D6171E15CDDE00AC128B /* LoggerConfig.plist */; };
 		7304D61B1E15CDDE00AC128B /* LoggerConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7304D6171E15CDDE00AC128B /* LoggerConfig.plist */; };
 		731332D31E1573E5002AE7D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731332D21E1573E5002AE7D3 /* AppDelegate.swift */; };
-		731332D51E1573E5002AE7D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731332D41E1573E5002AE7D3 /* ViewController.swift */; };
 		731332D81E1573E5002AE7D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731332D61E1573E5002AE7D3 /* Main.storyboard */; };
 		731332DA1E1573E5002AE7D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 731332D91E1573E5002AE7D3 /* Assets.xcassets */; };
 		731332DD1E1573E5002AE7D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 731332DB1E1573E5002AE7D3 /* LaunchScreen.storyboard */; };
 		731332FD1E157934002AE7D3 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731332FC1E157934002AE7D3 /* ConfigurationService.swift */; };
 		731332FE1E157934002AE7D3 /* ConfigurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731332FC1E157934002AE7D3 /* ConfigurationService.swift */; };
+		731574551E448F2A00D1C746 /* ConfigurationContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731574541E448F2A00D1C746 /* ConfigurationContainer.swift */; };
 		735140981E38F2520039AC5A /* FixtureLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735140971E38F2520039AC5A /* FixtureLoader.swift */; };
 		735140A31E38F56E0039AC5A /* ApiImagesConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735140A21E38F56E0039AC5A /* ApiImagesConfigurationTests.swift */; };
 		735140A51E38F62E0039AC5A /* api_configuration_model.json in Resources */ = {isa = PBXBuildFile; fileRef = 735140A41E38F62E0039AC5A /* api_configuration_model.json */; };
@@ -53,19 +53,18 @@
 		73CD8E681E3B668A00CF69F5 /* FixtureLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735140971E38F2520039AC5A /* FixtureLoader.swift */; };
 		73CD8E6E1E3B883500CF69F5 /* GetConfigurationProcessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CD8E6C1E3B883500CF69F5 /* GetConfigurationProcessTests.swift */; };
 		73CD8E701E3B8B2E00CF69F5 /* TestConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CD8E6F1E3B8B2E00CF69F5 /* TestConfigurationManager.swift */; };
+		73F8CB7D1E3C00B8001BAF4B /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8CB7C1E3C00B8001BAF4B /* ViewProtocol.swift */; };
+		73F8CB7E1E3C00B8001BAF4B /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8CB7C1E3C00B8001BAF4B /* ViewProtocol.swift */; };
+		73F8CB801E3C0109001BAF4B /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8CB7F1E3C0109001BAF4B /* PresenterProtocol.swift */; };
+		73F8CB811E3C0109001BAF4B /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8CB7F1E3C0109001BAF4B /* PresenterProtocol.swift */; };
+		73F8CB831E3C08BA001BAF4B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8CB821E3C08BA001BAF4B /* BaseViewController.swift */; };
+		73F8CB841E3C08BA001BAF4B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8CB821E3C08BA001BAF4B /* BaseViewController.swift */; };
 		73FD951A1E15E00D00D8B6D5 /* ApiImagesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FD95191E15E00D00D8B6D5 /* ApiImagesConfiguration.swift */; };
 		73FD951B1E15E00D00D8B6D5 /* ApiImagesConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FD95191E15E00D00D8B6D5 /* ApiImagesConfiguration.swift */; };
 		B499F7B5EC25822F25EA9EFE /* Pods_CleanRxiOSCinema.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0D8FDE55494D8CE72A839E5 /* Pods_CleanRxiOSCinema.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		73005C731E226811000240C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 731332C71E1573E5002AE7D3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 731332CE1E1573E5002AE7D3;
-			remoteInfo = CleanRxiOSCinema;
-		};
 		731332E41E1573E5002AE7D3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 731332C71E1573E5002AE7D3 /* Project object */;
@@ -79,7 +78,6 @@
 		3D5FB64733C9D11D2B88CCFF /* Pods-CleanRxiOSCinema.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanRxiOSCinema.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleanRxiOSCinema/Pods-CleanRxiOSCinema.release.xcconfig"; sourceTree = "<group>"; };
 		4796B30E994FD5CFC1CE79F5 /* Pods-CleanRxiOSCinemaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanRxiOSCinemaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleanRxiOSCinemaTests/Pods-CleanRxiOSCinemaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6E15D10203BDBC435F187EE0 /* Pods_CleanRxiOSCinemaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanRxiOSCinemaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		73005C6E1E226811000240C2 /* CleanRxiOSCinemaTests1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanRxiOSCinemaTests1.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7304D60B1E15C77900AC128B /* ApiConfigurationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiConfigurationResponse.swift; path = ../Models/Configuration/ApiConfigurationResponse.swift; sourceTree = "<group>"; };
 		7304D60C1E15C77900AC128B /* ApiSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiSize.swift; sourceTree = "<group>"; };
 		7304D6111E15CA1D00AC128B /* ConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConfigurationManager.swift; path = CleanRxiOSCinema/Data/Api/Managers/ConfigurationManager.swift; sourceTree = SOURCE_ROOT; };
@@ -87,7 +85,6 @@
 		7304D6171E15CDDE00AC128B /* LoggerConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LoggerConfig.plist; sourceTree = "<group>"; };
 		731332CF1E1573E5002AE7D3 /* CleanRxiOSCinema.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanRxiOSCinema.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		731332D21E1573E5002AE7D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		731332D41E1573E5002AE7D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		731332D71E1573E5002AE7D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		731332D91E1573E5002AE7D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		731332DC1E1573E5002AE7D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -95,6 +92,7 @@
 		731332E31E1573E5002AE7D3 /* CleanRxiOSCinemaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanRxiOSCinemaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		731332E91E1573E5002AE7D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		731332FC1E157934002AE7D3 /* ConfigurationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationService.swift; sourceTree = "<group>"; };
+		731574541E448F2A00D1C746 /* ConfigurationContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationContainer.swift; sourceTree = "<group>"; };
 		735140971E38F2520039AC5A /* FixtureLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixtureLoader.swift; sourceTree = "<group>"; };
 		735140A21E38F56E0039AC5A /* ApiImagesConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiImagesConfigurationTests.swift; sourceTree = "<group>"; };
 		735140A41E38F62E0039AC5A /* api_configuration_model.json */ = {isa = PBXFileReference; explicitFileType = text.json; fileEncoding = 4; path = api_configuration_model.json; sourceTree = "<group>"; };
@@ -112,6 +110,9 @@
 		73CD8E651E3B668400CF69F5 /* api_configuration_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = api_configuration_response.json; sourceTree = "<group>"; };
 		73CD8E6C1E3B883500CF69F5 /* GetConfigurationProcessTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetConfigurationProcessTests.swift; sourceTree = "<group>"; };
 		73CD8E6F1E3B8B2E00CF69F5 /* TestConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConfigurationManager.swift; sourceTree = "<group>"; };
+		73F8CB7C1E3C00B8001BAF4B /* ViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
+		73F8CB7F1E3C0109001BAF4B /* PresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
+		73F8CB821E3C08BA001BAF4B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		73FD95191E15E00D00D8B6D5 /* ApiImagesConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiImagesConfiguration.swift; sourceTree = "<group>"; };
 		8346425A4450C2728132DBFF /* Pods-CleanRxiOSCinemaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanRxiOSCinemaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CleanRxiOSCinemaTests/Pods-CleanRxiOSCinemaTests.release.xcconfig"; sourceTree = "<group>"; };
 		ABE054055A13F0A1F1495B19 /* Pods-CleanRxiOSCinema.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanRxiOSCinema.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CleanRxiOSCinema/Pods-CleanRxiOSCinema.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,13 +120,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		73005C6B1E226811000240C2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		731332CC1E1573E5002AE7D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,7 +181,6 @@
 			children = (
 				731332CF1E1573E5002AE7D3 /* CleanRxiOSCinema.app */,
 				731332E31E1573E5002AE7D3 /* CleanRxiOSCinemaTests.xctest */,
-				73005C6E1E226811000240C2 /* CleanRxiOSCinemaTests1.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,7 +198,6 @@
 				731332D61E1573E5002AE7D3 /* Main.storyboard */,
 				731332F61E1577C1002AE7D3 /* Presentation */,
 				7304D6141E15CDBA00AC128B /* Utils */,
-				731332D41E1573E5002AE7D3 /* ViewController.swift */,
 			);
 			path = CleanRxiOSCinema;
 			sourceTree = "<group>";
@@ -242,6 +234,7 @@
 		731332F61E1577C1002AE7D3 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				73F8CB7B1E3C0076001BAF4B /* Base */,
 				73CC9BA91E3A7E57008ED7DF /* Splash */,
 			);
 			path = Presentation;
@@ -389,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				73CC9BA71E3A7DDB008ED7DF /* ApiContainer.swift */,
+				731574541E448F2A00D1C746 /* ConfigurationContainer.swift */,
 			);
 			path = Injection;
 			sourceTree = "<group>";
@@ -428,6 +422,16 @@
 			path = Configuration;
 			sourceTree = "<group>";
 		};
+		73F8CB7B1E3C0076001BAF4B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				73F8CB7C1E3C00B8001BAF4B /* ViewProtocol.swift */,
+				73F8CB7F1E3C0109001BAF4B /* PresenterProtocol.swift */,
+				73F8CB821E3C08BA001BAF4B /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		B9D5CD088A7B09CFFC0952FA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -451,24 +455,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		73005C6D1E226811000240C2 /* CleanRxiOSCinemaTests1 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 73005C771E226811000240C2 /* Build configuration list for PBXNativeTarget "CleanRxiOSCinemaTests1" */;
-			buildPhases = (
-				73005C6A1E226811000240C2 /* Sources */,
-				73005C6B1E226811000240C2 /* Frameworks */,
-				73005C6C1E226811000240C2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				73005C741E226811000240C2 /* PBXTargetDependency */,
-			);
-			name = CleanRxiOSCinemaTests1;
-			productName = CleanRxiOSCinemaTests1;
-			productReference = 73005C6E1E226811000240C2 /* CleanRxiOSCinemaTests1.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		731332CE1E1573E5002AE7D3 /* CleanRxiOSCinema */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 731332EC1E1573E5002AE7D3 /* Build configuration list for PBXNativeTarget "CleanRxiOSCinema" */;
@@ -520,12 +506,6 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Cláudio Ribeiro";
 				TargetAttributes = {
-					73005C6D1E226811000240C2 = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = RY5H3SA37H;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 731332CE1E1573E5002AE7D3;
-					};
 					731332CE1E1573E5002AE7D3 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = RY5H3SA37H;
@@ -553,19 +533,11 @@
 			targets = (
 				731332CE1E1573E5002AE7D3 /* CleanRxiOSCinema */,
 				731332E21E1573E5002AE7D3 /* CleanRxiOSCinemaTests */,
-				73005C6D1E226811000240C2 /* CleanRxiOSCinemaTests1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		73005C6C1E226811000240C2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		731332CD1E1573E5002AE7D3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -684,31 +656,27 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		73005C6A1E226811000240C2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		731332CB1E1573E5002AE7D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				73CC9BA81E3A7DDB008ED7DF /* ApiContainer.swift in Sources */,
 				7304D60F1E15C77900AC128B /* ApiSize.swift in Sources */,
-				731332D51E1573E5002AE7D3 /* ViewController.swift in Sources */,
 				73CC9BB11E3A7E9E008ED7DF /* SplashViewController.swift in Sources */,
 				73CD8E681E3B668A00CF69F5 /* FixtureLoader.swift in Sources */,
 				7304D6121E15CA1D00AC128B /* ConfigurationManager.swift in Sources */,
+				73F8CB7D1E3C00B8001BAF4B /* ViewProtocol.swift in Sources */,
 				731332FD1E157934002AE7D3 /* ConfigurationService.swift in Sources */,
 				7304D6181E15CDDE00AC128B /* CinemaLogger.swift in Sources */,
 				73CC9BAB1E3A7E78008ED7DF /* SplashNavigator.swift in Sources */,
 				7381B3CF1E39128100871B57 /* ImageUrlProvider.swift in Sources */,
 				731332D31E1573E5002AE7D3 /* AppDelegate.swift in Sources */,
 				73BCC2331E39253100BFB1FC /* SplashInteractor.swift in Sources */,
+				73F8CB831E3C08BA001BAF4B /* BaseViewController.swift in Sources */,
 				7304D60D1E15C77900AC128B /* ApiConfigurationResponse.swift in Sources */,
+				731574551E448F2A00D1C746 /* ConfigurationContainer.swift in Sources */,
 				73CC9BAE1E3A7E86008ED7DF /* SplashPresenter.swift in Sources */,
+				73F8CB801E3C0109001BAF4B /* PresenterProtocol.swift in Sources */,
 				7381B3CB1E390EA100871B57 /* ConfigurationModel.swift in Sources */,
 				73FD951A1E15E00D00D8B6D5 /* ApiImagesConfiguration.swift in Sources */,
 				7381B3C51E39055500871B57 /* GetConfigurationProcess.swift in Sources */,
@@ -724,7 +692,9 @@
 				73CD8E6E1E3B883500CF69F5 /* GetConfigurationProcessTests.swift in Sources */,
 				7304D6191E15CDDE00AC128B /* CinemaLogger.swift in Sources */,
 				73FD951B1E15E00D00D8B6D5 /* ApiImagesConfiguration.swift in Sources */,
+				73F8CB841E3C08BA001BAF4B /* BaseViewController.swift in Sources */,
 				735140A31E38F56E0039AC5A /* ApiImagesConfigurationTests.swift in Sources */,
+				73F8CB7E1E3C00B8001BAF4B /* ViewProtocol.swift in Sources */,
 				73CC9BB21E3A7E9E008ED7DF /* SplashViewController.swift in Sources */,
 				73CC9BAF1E3A7E86008ED7DF /* SplashPresenter.swift in Sources */,
 				7304D6131E15CA1D00AC128B /* ConfigurationManager.swift in Sources */,
@@ -732,6 +702,7 @@
 				731332FE1E157934002AE7D3 /* ConfigurationService.swift in Sources */,
 				73CD8E641E3B62EE00CF69F5 /* ConfigurationManagerTests.swift in Sources */,
 				73BCC2341E39253100BFB1FC /* SplashInteractor.swift in Sources */,
+				73F8CB811E3C0109001BAF4B /* PresenterProtocol.swift in Sources */,
 				735140981E38F2520039AC5A /* FixtureLoader.swift in Sources */,
 				73CD8E701E3B8B2E00CF69F5 /* TestConfigurationManager.swift in Sources */,
 				7304D6101E15C77900AC128B /* ApiSize.swift in Sources */,
@@ -747,11 +718,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		73005C741E226811000240C2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 731332CE1E1573E5002AE7D3 /* CleanRxiOSCinema */;
-			targetProxy = 73005C731E226811000240C2 /* PBXContainerItemProxy */;
-		};
 		731332E51E1573E5002AE7D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 731332CE1E1573E5002AE7D3 /* CleanRxiOSCinema */;
@@ -779,34 +745,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		73005C751E226811000240C2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = RY5H3SA37H;
-				INFOPLIST_FILE = CleanRxiOSCinemaTests1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.crpr.CleanRxiOSCinemaTests1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanRxiOSCinema.app/CleanRxiOSCinema";
-			};
-			name = Debug;
-		};
-		73005C761E226811000240C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = RY5H3SA37H;
-				INFOPLIST_FILE = CleanRxiOSCinemaTests1/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.crpr.CleanRxiOSCinemaTests1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CleanRxiOSCinema.app/CleanRxiOSCinema";
-			};
-			name = Release;
-		};
 		731332EA1E1573E5002AE7D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -847,7 +785,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -890,7 +828,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -902,7 +840,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABE054055A13F0A1F1495B19 /* Pods-CleanRxiOSCinema.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RY5H3SA37H;
 				INFOPLIST_FILE = CleanRxiOSCinema/Info.plist;
@@ -917,7 +855,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D5FB64733C9D11D2B88CCFF /* Pods-CleanRxiOSCinema.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RY5H3SA37H;
 				INFOPLIST_FILE = CleanRxiOSCinema/Info.plist;
@@ -932,7 +870,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4796B30E994FD5CFC1CE79F5 /* Pods-CleanRxiOSCinemaTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = RY5H3SA37H;
 				INFOPLIST_FILE = CleanRxiOSCinemaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -946,7 +884,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8346425A4450C2728132DBFF /* Pods-CleanRxiOSCinemaTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = RY5H3SA37H;
 				INFOPLIST_FILE = CleanRxiOSCinemaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -959,15 +897,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		73005C771E226811000240C2 /* Build configuration list for PBXNativeTarget "CleanRxiOSCinemaTests1" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				73005C751E226811000240C2 /* Debug */,
-				73005C761E226811000240C2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		731332CA1E1573E5002AE7D3 /* Build configuration list for PBXProject "CleanRxiOSCinema" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

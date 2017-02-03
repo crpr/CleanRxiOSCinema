@@ -18,6 +18,7 @@ PODS:
   - Nimble (5.1.1)
   - ObjectMapper (2.2.1)
   - Quick (1.0.0)
+  - QuickShotUtils (0.2.0)
   - Result (3.1.0)
   - Reusable (3.0.1):
     - Reusable/Storyboard (= 3.0.1)
@@ -27,6 +28,7 @@ PODS:
   - RxSwift (3.1.0)
   - RxTest (3.1.0):
     - RxSwift (~> 3.0)
+  - SnapKit (3.1.2)
   - SwiftGen (4.0.1)
   - Swinject (2.0.0)
   - XCGLogger (4.0.0):
@@ -44,9 +46,11 @@ DEPENDENCIES:
   - Nimble
   - ObjectMapper
   - Quick
+  - QuickShotUtils (from `https://github.com/pmlbrito/QuickShotUtils.git`)
   - Reusable
   - RxSwift
   - RxTest
+  - SnapKit
   - SwiftGen
   - Swinject (= 2.0.0)
   - XCGLogger (~> 4.0.0)
@@ -56,11 +60,16 @@ EXTERNAL SOURCES:
     :path: Pods/CocoaPodsKeys
   Moya-ObjectMapper:
     :git: https://github.com/ivanbruel/Moya-ObjectMapper
+  QuickShotUtils:
+    :git: https://github.com/pmlbrito/QuickShotUtils.git
 
 CHECKOUT OPTIONS:
   Moya-ObjectMapper:
     :commit: 2c82539c7189a0a1bef360289a06090a5f56d5b8
     :git: https://github.com/ivanbruel/Moya-ObjectMapper
+  QuickShotUtils:
+    :commit: 7ca3976bc5d1436c6d314ed745b49df81919c5c8
+    :git: https://github.com/pmlbrito/QuickShotUtils.git
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
@@ -74,14 +83,16 @@ SPEC CHECKSUMS:
   Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
   ObjectMapper: 41e43e1a89f8060ef5ea5d04ba852e269a621d68
   Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+  QuickShotUtils: 2c60abe5f4e291b6c12c871eaea48f691f47d82c
   Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
   Reusable: 5362d10271ca8316b104698a21e90498f47e8339
   RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
   RxTest: 661e33b5022682961784da03cf79c175fcc4bd64
+  SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
   SwiftGen: 04bbc1fb69add82a7a471380dfbdd00b45912d17
   Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
   XCGLogger: 38063ea89b4c8b23232d18efd2e12eb0005f3ea4
 
-PODFILE CHECKSUM: 6e7ef62fefcc164339020fd61f5d51adf04f97f9
+PODFILE CHECKSUM: 0a7b1503e440ca1f2ebfbb6b6398648471522886
 
 COCOAPODS: 1.1.1

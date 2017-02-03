@@ -9,7 +9,7 @@ target 'CleanRxiOSCinema' do
       "CinemaApiKey"
     ]}
 
-  # Pods for Marvel
+  # Pods for Cinema
    pod 'SwiftGen'
    pod 'RxSwift'
    pod 'Moya-ObjectMapper', :git => 'https://github.com/ivanbruel/Moya-ObjectMapper'
@@ -20,6 +20,9 @@ target 'CleanRxiOSCinema' do
    pod 'XCGLogger', '~> 4.0.0'
    pod 'Moya', '8.0.0-beta.6'
    pod 'Swinject', '2.0.0'
+   pod 'QuickShotUtils', :git => 'https://github.com/pmlbrito/QuickShotUtils.git'
+   pod 'SnapKit'
+   pod 'Kingfisher'
 
 end
 

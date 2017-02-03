@@ -17,23 +17,26 @@ class ApiContainer {
     
     static func setup() {
         
-        container.register(MoyaProvider<ConfigurationService>.self) { _ in
-            MoyaProvider<ConfigurationService>()
-        }
-        
-        container.register(ConfigurationManagerProtocol.self) { _ in
-            ConfigurationManager(provider: container.resolve(MoyaProvider<ConfigurationService>.self)!);
-        }
-
-        container.register(GetConfigurationProcessProtocol.self) { _ in
-            GetConfigurationProcess(manager: container.resolve(ConfigurationManagerProtocol.self)!);
-        }
-        
         container.register(SplashInteractorProtocol.self) { _ in
             SplashInteractor(mainThread: MainScheduler.instance,
                              backgroundThread: .background,
-                             process: ApiContainer.getResolver().resolve(GetConfigurationProcessProtocol.self)!)
+                             process: ConfigurationContainer.getResolver().resolve(GetConfigurationProcessProtocol.self)!)
         }
+        
+        container.register(SplashPresenterProtocol.self){ _ in
+            SplashPresenter(interactor: container.resolve(SplashInteractorProtocol.self)!);
+        }
+
+        container.register(SplashNavigatorProtocol.self){ _ in
+            SplashNavigator();
+        }
+        
+        container.register(SplashViewProtocol.self) { _ in
+            let controller = SplashViewController();
+            controller.presenter = container.resolve(SplashPresenterProtocol.self)!;
+            controller.navigator = container.resolve(SplashNavigatorProtocol.self)!;
+            return controller;
+            }
     }
     
     static func getResolver() -> Container {

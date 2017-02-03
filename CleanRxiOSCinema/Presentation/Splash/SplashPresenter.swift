@@ -9,7 +9,7 @@
 import Foundation
 import RxSwift
 
-protocol SplashPresenterProtocol {
+protocol SplashPresenterProtocol: PresenterProtocol {
     func getConfiguration();
 }
 
@@ -18,6 +18,7 @@ class SplashPresenter : SplashPresenterProtocol {
     let disposeBag = DisposeBag();
     var interactor: SplashInteractorProtocol?;
     var isMakingRequest: Bool = false;
+    var view: SplashViewProtocol?;
     
     init(interactor: SplashInteractorProtocol) {
         self.interactor = interactor;
@@ -44,12 +45,15 @@ class SplashPresenter : SplashPresenterProtocol {
     }
     
     fileprivate func onReceiveResult(result: Int) {
-        CinemaLogger.sharedInstance.debug("SUCCESS");
-        CinemaLogger.sharedInstance.debug(result);
+        self.view?.goToNextRoute();
     }
     
     fileprivate func showError(error: Error) {
-        print(error)
+        self.view?.displayError(message: error.localizedDescription);
+    }
+    
+    func bindView(view: ViewProtocol) {
+        self.view = view as? SplashViewProtocol;
     }
     
 }

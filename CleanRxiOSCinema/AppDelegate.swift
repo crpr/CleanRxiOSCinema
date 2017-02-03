@@ -22,6 +22,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         CinemaLogger.sharedInstance;
         
         ApiContainer.setup();
+        ConfigurationContainer.setup();
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        if let window = window {
+            window.rootViewController = ApiContainer.getResolver().resolve(SplashViewProtocol.self) as! UIViewController?;
+            window.makeKeyAndVisible()
+        }
         
         return true
     }

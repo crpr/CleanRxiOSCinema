@@ -9,8 +9,6 @@
 import Foundation
 import ObjectMapper
 
-@testable import CleanRxiOSCinema
-
 struct FixtureLoader {
     
     let data: Data

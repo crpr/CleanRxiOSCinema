@@ -8,145 +8,120 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>CryptoSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Dollar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>Fakery-Faker.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>Fakery.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>Keys.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>8</integer>
 		</dict>
 		<key>Moya-ObjectMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>10</integer>
 		</dict>
 		<key>Moya.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>9</integer>
 		</dict>
 		<key>Nimble.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>11</integer>
 		</dict>
 		<key>ObjectMapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>12</integer>
 		</dict>
 		<key>Pods-CleanRxiOSCinema.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>13</integer>
 		</dict>
 		<key>Pods-CleanRxiOSCinemaTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>14</integer>
 		</dict>
 		<key>Quick.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>15</integer>
+		</dict>
+		<key>QuickShotUtils.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Result.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>16</integer>
 		</dict>
 		<key>Reusable.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>17</integer>
 		</dict>
 		<key>RxSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>18</integer>
 		</dict>
 		<key>RxTest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>19</integer>
+		</dict>
+		<key>SnapKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Swinject.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>20</integer>
 		</dict>
 		<key>XCGLogger.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>21</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>03EAE0ACB08C12358C4102D9355CC84F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1252714FD72EE8B0E423FAEABE38B4DA</key>
 		<dict>
 			<key>primary</key>
@@ -157,12 +132,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2E7331CB74660F429AF2901E359E9C75</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>41D524D18FCAAA2AEEC8360E5D2D7727</key>
+		<key>1E76829E5E1A8E487D41C07E357E875C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -172,7 +142,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>603793512191C567BFFA4E0179F97413</key>
+		<key>4BC3EE3A39E1F5BA27F77A058CE8A6FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -183,6 +153,11 @@
 			<true/>
 		</dict>
 		<key>6BB1C1403B2419F911818DA8413FDA07</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6E17F95BEA86C0342C00691F61EF4A19</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -207,6 +182,21 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>A0E546A49AFA58BF50C7BB392E986CC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A154CAA47BF877CF05F92B47AC03D3F8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A733E9C9D28761082F611222DC4F349D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B27F1F7B862582A90168D876BFA178C0</key>
 		<dict>
 			<key>primary</key>
@@ -222,11 +212,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CE5F4029974199C3E89A929C61E1EC89</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>CF9F83025EEE1E89490800018F391A28</key>
 		<dict>
 			<key>primary</key>
@@ -238,11 +223,6 @@
 			<true/>
 		</dict>
 		<key>F800E04B76BEF4FC483EA29480019ED3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F8B7731CE9FBACCCDC5E11DB9B464146</key>
 		<dict>
 			<key>primary</key>
 			<true/>
