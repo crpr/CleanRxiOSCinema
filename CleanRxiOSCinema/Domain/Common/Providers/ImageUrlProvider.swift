@@ -21,4 +21,8 @@ class ImageUrlProvider {
     func setCurrentConfig(model: ConfigurationModel) {
         self.model = model;
     }
+    
+    func getUrlFor(size: ApiSize) -> String? {
+        return self.model.baseUrl+size.rawValue;
+    }
 }

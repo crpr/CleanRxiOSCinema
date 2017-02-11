@@ -15,13 +15,25 @@ public enum SplashRoute {
 }
 
 protocol  SplashNavigatorProtocol {
-    func navigateToNextScreen(destination: SplashRoute?, transitionType: ViewControllerPresentationType?);
+    func navigateToNextScreen(viewController: QSUBaseViewController, destination: SplashRoute?, transitionType: ViewControllerPresentationType?);
 }
 
 class SplashNavigator: SplashNavigatorProtocol {
     
-    func navigateToNextScreen(destination: SplashRoute?, transitionType: ViewControllerPresentationType?) {
+    func navigateToNextScreen(viewController: QSUBaseViewController, destination: SplashRoute?, transitionType: ViewControllerPresentationType?) {
         
+        var destinationViewController: UIViewController? = nil
+        
+        if let dest = destination {
+            switch(dest){
+            case .home:
+                destinationViewController = DiscoverContainer.getResolver().resolve(DiscoverViewProtocol.self) as! DiscoverViewController;
+                break;
+            default:
+                break;
+            }
+        }
+        
+        viewController.transtitionToNextViewController(fromViewController: viewController, destinationViewController: destinationViewController, transitionType: transitionType);
     }
-
 }

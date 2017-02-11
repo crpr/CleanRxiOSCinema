@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import SnapKit
+import QuickShotUtils
 
 protocol SplashViewProtocol: ViewProtocol {
     func goToNextRoute();
@@ -42,7 +43,7 @@ class SplashViewController : BaseViewController, SplashViewProtocol {
     
     func buildViewLayout()
     {
-        self.view.backgroundColor = UIColor(hexString: "#5C5C5E")
+        self.view.backgroundColor = UIColor(hexString: "#5C5C5EFF")
         
         self.view.addSubview(buildTitleLabel());
         
@@ -79,7 +80,7 @@ class SplashViewController : BaseViewController, SplashViewProtocol {
     }
 
     func goToNextRoute() {
-        CinemaLogger.sharedInstance.debug("SUCCESS");
+        self.navigator?.navigateToNextScreen(viewController: self, destination: SplashRoute.home, transitionType: ViewControllerPresentationType.ReplaceAtRoot)
     }
     
 }

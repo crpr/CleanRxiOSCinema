@@ -23,16 +23,13 @@ target 'CleanRxiOSCinema' do
    pod 'QuickShotUtils', :git => 'https://github.com/pmlbrito/QuickShotUtils.git'
    pod 'SnapKit'
    pod 'Kingfisher'
+   pod 'Swinject', '2.0.0'
 
 end
 
 target 'CleanRxiOSCinemaTests' do
     use_frameworks!
     
-    pod 'Quick'
-    pod 'Nimble'
-    pod 'Fakery'
-    pod 'ObjectMapper'
     pod 'SwiftGen'
     pod 'RxSwift'
     pod 'Moya-ObjectMapper', :git => 'https://github.com/ivanbruel/Moya-ObjectMapper'
@@ -43,6 +40,14 @@ target 'CleanRxiOSCinemaTests' do
     pod 'XCGLogger', '~> 4.0.0'
     pod 'Moya', '8.0.0-beta.6'
     pod 'Swinject', '2.0.0'
+    pod 'QuickShotUtils', :git => 'https://github.com/pmlbrito/QuickShotUtils.git'
+    pod 'SnapKit'
+    pod 'Kingfisher'
+    pod 'Swinject', '2.0.0'
+    
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'Fakery'
     pod 'RxTest'
     
 end

@@ -44,7 +44,6 @@ DEPENDENCIES:
   - Moya (= 8.0.0-beta.6)
   - Moya-ObjectMapper (from `https://github.com/ivanbruel/Moya-ObjectMapper`)
   - Nimble
-  - ObjectMapper
   - Quick
   - QuickShotUtils (from `https://github.com/pmlbrito/QuickShotUtils.git`)
   - Reusable
@@ -93,6 +92,6 @@ SPEC CHECKSUMS:
   Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
   XCGLogger: 38063ea89b4c8b23232d18efd2e12eb0005f3ea4
 
-PODFILE CHECKSUM: 0a7b1503e440ca1f2ebfbb6b6398648471522886
+PODFILE CHECKSUM: 195a8012b491087b0ab450c38684a966fe5f00a1
 
 COCOAPODS: 1.1.1

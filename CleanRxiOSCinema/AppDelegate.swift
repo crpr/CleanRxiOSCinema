@@ -19,15 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        CinemaLogger.sharedInstance;
+        _ = CinemaLogger.sharedInstance;
         
-        ApiContainer.setup();
+        SplashContainer.setup();
         ConfigurationContainer.setup();
+        DiscoverContainer.setup();
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
         if let window = window {
-            window.rootViewController = ApiContainer.getResolver().resolve(SplashViewProtocol.self) as! UIViewController?;
+            window.rootViewController = SplashContainer.getResolver().resolve(SplashViewProtocol.self) as! UIViewController?;
             window.makeKeyAndVisible()
         }
         

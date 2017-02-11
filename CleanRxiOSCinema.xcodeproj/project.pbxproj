@@ -40,7 +40,7 @@
 		73BCC2301E39243400BFB1FC /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCC22E1E39243400BFB1FC /* Interactor.swift */; };
 		73BCC2331E39253100BFB1FC /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCC2321E39253100BFB1FC /* SplashInteractor.swift */; };
 		73BCC2341E39253100BFB1FC /* SplashInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCC2321E39253100BFB1FC /* SplashInteractor.swift */; };
-		73CC9BA81E3A7DDB008ED7DF /* ApiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC9BA71E3A7DDB008ED7DF /* ApiContainer.swift */; };
+		73CC9BA81E3A7DDB008ED7DF /* SplashContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC9BA71E3A7DDB008ED7DF /* SplashContainer.swift */; };
 		73CC9BAB1E3A7E78008ED7DF /* SplashNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC9BAA1E3A7E78008ED7DF /* SplashNavigator.swift */; };
 		73CC9BAC1E3A7E78008ED7DF /* SplashNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC9BAA1E3A7E78008ED7DF /* SplashNavigator.swift */; };
 		73CC9BAE1E3A7E86008ED7DF /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CC9BAD1E3A7E86008ED7DF /* SplashPresenter.swift */; };
@@ -53,6 +53,19 @@
 		73CD8E681E3B668A00CF69F5 /* FixtureLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735140971E38F2520039AC5A /* FixtureLoader.swift */; };
 		73CD8E6E1E3B883500CF69F5 /* GetConfigurationProcessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CD8E6C1E3B883500CF69F5 /* GetConfigurationProcessTests.swift */; };
 		73CD8E701E3B8B2E00CF69F5 /* TestConfigurationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73CD8E6F1E3B8B2E00CF69F5 /* TestConfigurationManager.swift */; };
+		73DAE98B1E4E5F5F005C273C /* DiscoverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE98A1E4E5F5F005C273C /* DiscoverService.swift */; };
+		73DAE98D1E4E6017005C273C /* DiscoverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE98C1E4E6017005C273C /* DiscoverManager.swift */; };
+		73DAE98F1E4E6099005C273C /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE98E1E4E6099005C273C /* ApiResponse.swift */; };
+		73DAE9921E4E85D9005C273C /* ApiMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE9911E4E85D9005C273C /* ApiMovie.swift */; };
+		73DAE9941E4E89FA005C273C /* DiscoverContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE9931E4E89FA005C273C /* DiscoverContainer.swift */; };
+		73DAE99F1E4E8B32005C273C /* DiscoverInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE99C1E4E8B32005C273C /* DiscoverInteractor.swift */; };
+		73DAE9A01E4E8B32005C273C /* DiscoverProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE99D1E4E8B32005C273C /* DiscoverProcess.swift */; };
+		73DAE9A11E4E8B32005C273C /* ListMovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE99E1E4E8B32005C273C /* ListMovieModel.swift */; };
+		73DAE9A31E4E8BCE005C273C /* DiscoverMovieListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE9A21E4E8BCE005C273C /* DiscoverMovieListResult.swift */; };
+		73DAE9A51E4E8D9D005C273C /* ApiMovieListConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE9A41E4E8D9D005C273C /* ApiMovieListConverter.swift */; };
+		73DAE9AC1E4E956D005C273C /* DiscoverPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE9AB1E4E956D005C273C /* DiscoverPresenter.swift */; };
+		73DAE9AE1E4E9578005C273C /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE9AD1E4E9578005C273C /* DiscoverViewController.swift */; };
+		73DAE9B01E4E9587005C273C /* DiscoverNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE9AF1E4E9587005C273C /* DiscoverNavigator.swift */; };
 		73F8CB7D1E3C00B8001BAF4B /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8CB7C1E3C00B8001BAF4B /* ViewProtocol.swift */; };
 		73F8CB7E1E3C00B8001BAF4B /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8CB7C1E3C00B8001BAF4B /* ViewProtocol.swift */; };
 		73F8CB801E3C0109001BAF4B /* PresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F8CB7F1E3C0109001BAF4B /* PresenterProtocol.swift */; };
@@ -102,7 +115,7 @@
 		7381B3CE1E39128100871B57 /* ImageUrlProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUrlProvider.swift; sourceTree = "<group>"; };
 		73BCC22E1E39243400BFB1FC /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		73BCC2321E39253100BFB1FC /* SplashInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashInteractor.swift; sourceTree = "<group>"; };
-		73CC9BA71E3A7DDB008ED7DF /* ApiContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiContainer.swift; sourceTree = "<group>"; };
+		73CC9BA71E3A7DDB008ED7DF /* SplashContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashContainer.swift; sourceTree = "<group>"; };
 		73CC9BAA1E3A7E78008ED7DF /* SplashNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashNavigator.swift; sourceTree = "<group>"; };
 		73CC9BAD1E3A7E86008ED7DF /* SplashPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
 		73CC9BB01E3A7E9E008ED7DF /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +123,19 @@
 		73CD8E651E3B668400CF69F5 /* api_configuration_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = api_configuration_response.json; sourceTree = "<group>"; };
 		73CD8E6C1E3B883500CF69F5 /* GetConfigurationProcessTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetConfigurationProcessTests.swift; sourceTree = "<group>"; };
 		73CD8E6F1E3B8B2E00CF69F5 /* TestConfigurationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestConfigurationManager.swift; sourceTree = "<group>"; };
+		73DAE98A1E4E5F5F005C273C /* DiscoverService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverService.swift; sourceTree = "<group>"; };
+		73DAE98C1E4E6017005C273C /* DiscoverManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiscoverManager.swift; path = CleanRxiOSCinema/Data/Api/Services/DiscoverManager.swift; sourceTree = SOURCE_ROOT; };
+		73DAE98E1E4E6099005C273C /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		73DAE9911E4E85D9005C273C /* ApiMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiMovie.swift; sourceTree = "<group>"; };
+		73DAE9931E4E89FA005C273C /* DiscoverContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverContainer.swift; sourceTree = "<group>"; };
+		73DAE99C1E4E8B32005C273C /* DiscoverInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverInteractor.swift; sourceTree = "<group>"; };
+		73DAE99D1E4E8B32005C273C /* DiscoverProcess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverProcess.swift; sourceTree = "<group>"; };
+		73DAE99E1E4E8B32005C273C /* ListMovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListMovieModel.swift; sourceTree = "<group>"; };
+		73DAE9A21E4E8BCE005C273C /* DiscoverMovieListResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverMovieListResult.swift; sourceTree = "<group>"; };
+		73DAE9A41E4E8D9D005C273C /* ApiMovieListConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiMovieListConverter.swift; sourceTree = "<group>"; };
+		73DAE9AB1E4E956D005C273C /* DiscoverPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverPresenter.swift; sourceTree = "<group>"; };
+		73DAE9AD1E4E9578005C273C /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		73DAE9AF1E4E9587005C273C /* DiscoverNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverNavigator.swift; sourceTree = "<group>"; };
 		73F8CB7C1E3C00B8001BAF4B /* ViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
 		73F8CB7F1E3C0109001BAF4B /* PresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterProtocol.swift; sourceTree = "<group>"; };
 		73F8CB821E3C08BA001BAF4B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -218,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				731332FF1E1579AB002AE7D3 /* Common */,
+				73DAE9951E4E8AC3005C273C /* Discover */,
 				73BCC2311E39252000BFB1FC /* Splash */,
 			);
 			path = Domain;
@@ -235,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				73F8CB7B1E3C0076001BAF4B /* Base */,
+				73DAE9AA1E4E9556005C273C /* Discover */,
 				73CC9BA91E3A7E57008ED7DF /* Splash */,
 			);
 			path = Presentation;
@@ -255,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				731332FC1E157934002AE7D3 /* ConfigurationService.swift */,
+				73DAE98A1E4E5F5F005C273C /* DiscoverService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -263,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				7304D6111E15CA1D00AC128B /* ConfigurationManager.swift */,
+				73DAE98C1E4E6017005C273C /* DiscoverManager.swift */,
 			);
 			name = Managers;
 			path = Factories;
@@ -271,7 +301,9 @@
 		731332FA1E15787C002AE7D3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				73DAE98E1E4E6099005C273C /* ApiResponse.swift */,
 				7304D6041E15C62200AC128B /* Configuration */,
+				73DAE9901E4E857A005C273C /* Discover */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -381,8 +413,9 @@
 		73CC9BA61E3A7DB5008ED7DF /* Injection */ = {
 			isa = PBXGroup;
 			children = (
-				73CC9BA71E3A7DDB008ED7DF /* ApiContainer.swift */,
+				73CC9BA71E3A7DDB008ED7DF /* SplashContainer.swift */,
 				731574541E448F2A00D1C746 /* ConfigurationContainer.swift */,
+				73DAE9931E4E89FA005C273C /* DiscoverContainer.swift */,
 			);
 			path = Injection;
 			sourceTree = "<group>";
@@ -420,6 +453,36 @@
 				73CD8E6F1E3B8B2E00CF69F5 /* TestConfigurationManager.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		73DAE9901E4E857A005C273C /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				73DAE9911E4E85D9005C273C /* ApiMovie.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		73DAE9951E4E8AC3005C273C /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				73DAE99C1E4E8B32005C273C /* DiscoverInteractor.swift */,
+				73DAE99D1E4E8B32005C273C /* DiscoverProcess.swift */,
+				73DAE99E1E4E8B32005C273C /* ListMovieModel.swift */,
+				73DAE9A21E4E8BCE005C273C /* DiscoverMovieListResult.swift */,
+				73DAE9A41E4E8D9D005C273C /* ApiMovieListConverter.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		73DAE9AA1E4E9556005C273C /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				73DAE9AF1E4E9587005C273C /* DiscoverNavigator.swift */,
+				73DAE9AB1E4E956D005C273C /* DiscoverPresenter.swift */,
+				73DAE9AD1E4E9578005C273C /* DiscoverViewController.swift */,
+			);
+			name = Discover;
 			sourceTree = "<group>";
 		};
 		73F8CB7B1E3C0076001BAF4B /* Base */ = {
@@ -660,23 +723,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73CC9BA81E3A7DDB008ED7DF /* ApiContainer.swift in Sources */,
+				73CC9BA81E3A7DDB008ED7DF /* SplashContainer.swift in Sources */,
 				7304D60F1E15C77900AC128B /* ApiSize.swift in Sources */,
 				73CC9BB11E3A7E9E008ED7DF /* SplashViewController.swift in Sources */,
 				73CD8E681E3B668A00CF69F5 /* FixtureLoader.swift in Sources */,
+				73DAE9A51E4E8D9D005C273C /* ApiMovieListConverter.swift in Sources */,
 				7304D6121E15CA1D00AC128B /* ConfigurationManager.swift in Sources */,
 				73F8CB7D1E3C00B8001BAF4B /* ViewProtocol.swift in Sources */,
+				73DAE98B1E4E5F5F005C273C /* DiscoverService.swift in Sources */,
+				73DAE9A01E4E8B32005C273C /* DiscoverProcess.swift in Sources */,
 				731332FD1E157934002AE7D3 /* ConfigurationService.swift in Sources */,
 				7304D6181E15CDDE00AC128B /* CinemaLogger.swift in Sources */,
+				73DAE9AE1E4E9578005C273C /* DiscoverViewController.swift in Sources */,
 				73CC9BAB1E3A7E78008ED7DF /* SplashNavigator.swift in Sources */,
 				7381B3CF1E39128100871B57 /* ImageUrlProvider.swift in Sources */,
 				731332D31E1573E5002AE7D3 /* AppDelegate.swift in Sources */,
+				73DAE9AC1E4E956D005C273C /* DiscoverPresenter.swift in Sources */,
 				73BCC2331E39253100BFB1FC /* SplashInteractor.swift in Sources */,
+				73DAE9A11E4E8B32005C273C /* ListMovieModel.swift in Sources */,
+				73DAE9A31E4E8BCE005C273C /* DiscoverMovieListResult.swift in Sources */,
+				73DAE99F1E4E8B32005C273C /* DiscoverInteractor.swift in Sources */,
+				73DAE98F1E4E6099005C273C /* ApiResponse.swift in Sources */,
 				73F8CB831E3C08BA001BAF4B /* BaseViewController.swift in Sources */,
 				7304D60D1E15C77900AC128B /* ApiConfigurationResponse.swift in Sources */,
 				731574551E448F2A00D1C746 /* ConfigurationContainer.swift in Sources */,
 				73CC9BAE1E3A7E86008ED7DF /* SplashPresenter.swift in Sources */,
+				73DAE9B01E4E9587005C273C /* DiscoverNavigator.swift in Sources */,
+				73DAE9941E4E89FA005C273C /* DiscoverContainer.swift in Sources */,
 				73F8CB801E3C0109001BAF4B /* PresenterProtocol.swift in Sources */,
+				73DAE9921E4E85D9005C273C /* ApiMovie.swift in Sources */,
+				73DAE98D1E4E6017005C273C /* DiscoverManager.swift in Sources */,
 				7381B3CB1E390EA100871B57 /* ConfigurationModel.swift in Sources */,
 				73FD951A1E15E00D00D8B6D5 /* ApiImagesConfiguration.swift in Sources */,
 				7381B3C51E39055500871B57 /* GetConfigurationProcess.swift in Sources */,
@@ -840,7 +916,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ABE054055A13F0A1F1495B19 /* Pods-CleanRxiOSCinema.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RY5H3SA37H;
 				INFOPLIST_FILE = CleanRxiOSCinema/Info.plist;
@@ -855,7 +931,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3D5FB64733C9D11D2B88CCFF /* Pods-CleanRxiOSCinema.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = RY5H3SA37H;
 				INFOPLIST_FILE = CleanRxiOSCinema/Info.plist;
@@ -870,7 +946,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4796B30E994FD5CFC1CE79F5 /* Pods-CleanRxiOSCinemaTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = RY5H3SA37H;
 				INFOPLIST_FILE = CleanRxiOSCinemaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -884,7 +960,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8346425A4450C2728132DBFF /* Pods-CleanRxiOSCinemaTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = RY5H3SA37H;
 				INFOPLIST_FILE = CleanRxiOSCinemaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

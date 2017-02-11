@@ -13,7 +13,7 @@ public enum ResultStatus : Int {
     case error = 2
 }
 
-struct Result {
+class Result {
     
     let resultStatusCode: ResultStatus;
     let message: String?;

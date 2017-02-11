@@ -1,5 +1,5 @@
 //
-//  ApiContainer.swift
+//  SplashContainer.swift
 //  CleanRxiOSCinema
 //
 //  Created by Cláudio Ribeiro on 25/01/2017.
@@ -11,7 +11,7 @@ import Swinject
 import Moya
 import RxSwift
 
-class ApiContainer {
+class SplashContainer {
     
     fileprivate static let container = Container();
     
