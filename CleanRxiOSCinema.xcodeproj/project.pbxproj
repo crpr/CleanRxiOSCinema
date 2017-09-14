@@ -60,6 +60,7 @@
 		73DAE9AC1E4E956D005C273C /* DiscoverPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE9AB1E4E956D005C273C /* DiscoverPresenter.swift */; };
 		73DAE9AE1E4E9578005C273C /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE9AD1E4E9578005C273C /* DiscoverViewController.swift */; };
 		73DAE9B01E4E9587005C273C /* DiscoverNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DAE9AF1E4E9587005C273C /* DiscoverNavigator.swift */; };
+		73EAAAC61F6A9DA400F3C3E8 /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EAAAC51F6A9DA400F3C3E8 /* BaseManager.swift */; };
 		73EEA2FE1E56035E006FC368 /* DiscoverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EEA2FD1E56035E006FC368 /* DiscoverManager.swift */; };
 		73EEA2FF1E560361006FC368 /* DiscoverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EEA2FD1E56035E006FC368 /* DiscoverManager.swift */; };
 		73EEA3021E56037D006FC368 /* ApiConfigurationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EEA3001E56037D006FC368 /* ApiConfigurationResponse.swift */; };
@@ -147,6 +148,7 @@
 		73DAE9AB1E4E956D005C273C /* DiscoverPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverPresenter.swift; sourceTree = "<group>"; };
 		73DAE9AD1E4E9578005C273C /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		73DAE9AF1E4E9587005C273C /* DiscoverNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverNavigator.swift; sourceTree = "<group>"; };
+		73EAAAC51F6A9DA400F3C3E8 /* BaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
 		73EEA2FD1E56035E006FC368 /* DiscoverManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverManager.swift; sourceTree = "<group>"; };
 		73EEA3001E56037D006FC368 /* ApiConfigurationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConfigurationResponse.swift; sourceTree = "<group>"; };
 		73EEA3011E56037D006FC368 /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 			children = (
 				73EEA2FD1E56035E006FC368 /* DiscoverManager.swift */,
 				7304D6111E15CA1D00AC128B /* ConfigurationManager.swift */,
+				73EAAAC51F6A9DA400F3C3E8 /* BaseManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -743,6 +746,7 @@
 				73EEA3031E56037D006FC368 /* ApiResponse.swift in Sources */,
 				73EEA2FE1E56035E006FC368 /* DiscoverManager.swift in Sources */,
 				73CD8E681E3B668A00CF69F5 /* FixtureLoader.swift in Sources */,
+				73EAAAC61F6A9DA400F3C3E8 /* BaseManager.swift in Sources */,
 				73DAE9A51E4E8D9D005C273C /* ApiMovieListConverter.swift in Sources */,
 				7304D6121E15CA1D00AC128B /* ConfigurationManager.swift in Sources */,
 				73F8CB7D1E3C00B8001BAF4B /* ViewProtocol.swift in Sources */,

@@ -27,11 +27,15 @@ class SplashNavigator: SplashNavigatorProtocol {
         if let dest = destination {
             switch(dest){
             case .home:
-                destinationViewController = DiscoverContainer.getResolver().resolve(DiscoverViewProtocol.self) as! DiscoverViewController;
+                destinationViewController = DiscoverContainer.getResolver().resolve(DiscoverViewProtocol.self) as? DiscoverViewController;
                 break;
             default:
                 break;
             }
+        }
+        
+        guard destinationViewController != nil else {
+            return
         }
         
         viewController.transtitionToNextViewController(fromViewController: viewController, destinationViewController: destinationViewController, transitionType: transitionType);

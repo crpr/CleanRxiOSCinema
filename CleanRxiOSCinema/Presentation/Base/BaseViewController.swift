@@ -34,4 +34,15 @@ class BaseViewController :  QSUBaseViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    public func setupNavigationAppearence() {
+        let navBar = navigationController?.navigationBar;
+        if(navBar != nil){
+            navBar!.barTintColor = UIColor(hexString: "#5C5C5EFF") //background color
+            navBar!.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]; //title text color
+            navBar!.tintColor = UIColor.white; //navigation and back button text color
+            navBar!.isTranslucent = false
+            navBar!.isHidden = false
+        }
+    }
+    
 }

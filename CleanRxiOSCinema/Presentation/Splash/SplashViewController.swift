@@ -80,7 +80,7 @@ class SplashViewController : BaseViewController, SplashViewProtocol {
     }
 
     func goToNextRoute() {
-        self.navigator?.navigateToNextScreen(viewController: self, destination: SplashRoute.home, transitionType: ViewControllerPresentationType.ReplaceAtRoot)
+        self.navigator?.navigateToNextScreen(viewController: self, destination: SplashRoute.home, transitionType: ViewControllerPresentationType.ReplaceNavigation)
     }
     
 }

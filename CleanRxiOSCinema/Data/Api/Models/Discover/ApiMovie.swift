@@ -9,7 +9,8 @@
 import Foundation
 import ObjectMapper
 
-struct ApiMovie {
+struct ApiMovie: Mappable {
+    
     var adult: Bool?
     var backdrop_path: String?
     var genre_ids: [Int]?
@@ -24,9 +25,11 @@ struct ApiMovie {
     var video: Bool?
     var vote_average: Double?
     var vote_count: Int?
+    
 }
 
-extension ApiMovie: Mappable {
+extension ApiMovie {
+    
     init?(map: Map) {}
     
     mutating func mapping(map: Map) {

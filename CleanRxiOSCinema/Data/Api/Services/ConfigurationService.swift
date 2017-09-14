@@ -8,16 +8,14 @@
 
 import Foundation
 import Moya
-import CryptoSwift
-import Dollar
 import Keys
 
-enum ConfigurationService {
+enum ConfigurationService : Moya.TargetType {
     case configuration()
 }
 
-extension ConfigurationService: TargetType {
-    
+extension ConfigurationService {
+
     var baseURL: URL {
         return URL(string: "https://api.themoviedb.org/3/")!
     }
@@ -40,23 +38,18 @@ extension ConfigurationService: TargetType {
         return ["api_key": CleanRxiOSCinemaKeys().cinemaApiKey]
     }
     
-    var parameters: [String: Any]? {
-        switch self {
-        case .configuration():
-            return authParameters()
-        }
+    var headers: [String : String]? {
+        return nil
     }
     
     var task: Task {
-        return .request
+        return .requestParameters(parameters: authParameters(), encoding: URLEncoding.default)
     }
     
     var sampleData: Data {
         switch self {
         case .configuration:
             return stubbedResponse("api_configuration_response");
-        default:
-            return Data()
         }
     }
     

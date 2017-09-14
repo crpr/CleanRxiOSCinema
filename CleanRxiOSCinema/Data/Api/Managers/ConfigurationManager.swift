@@ -8,50 +8,12 @@
 
 import Foundation
 import RxSwift
-import Moya
-import ObjectMapper
-import Moya_ObjectMapper
 
-protocol ConfigurationManagerProtocol {
+protocol ConfigurationManagerProtocol : BaseManagerProtocol {
     func configuration() -> Observable<ApiConfigurationResponse>;
 }
 
-struct ConfigurationManager : ConfigurationManagerProtocol {
-    let provider: MoyaProvider<ConfigurationService>
-    
-    init(provider: MoyaProvider<ConfigurationService>) {
-        self.provider = provider
-    }
-}
-
-extension ConfigurationManager {
-    
-    fileprivate func requestObject(_ token: ConfigurationService) -> Observable<ApiConfigurationResponse> {
-        
-        return Observable.create { observer in
-            let disposable = self.provider.request(token) { result in
-                switch result {
-                case let .success(response):
-                    do{
-                        let object : ApiConfigurationResponse = try response.mapObject(ApiConfigurationResponse.self)
-                        observer.onNext(object)
-                        observer.onCompleted()
-                    }catch{
-                        observer.onError(error)
-                    }
-                    
-                    break
-                case let .failure(error):
-                    observer.onError(error)
-                }
-                
-            }
-            
-            return Disposables.create {
-                disposable.cancel()
-            }
-        }
-    }
+class ConfigurationManager : BaseManager<ConfigurationService, ApiConfigurationResponse>, ConfigurationManagerProtocol {
 }
 
 extension ConfigurationManager {

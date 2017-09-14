@@ -8,15 +8,13 @@
 
 import Foundation
 import Moya
-import CryptoSwift
-import Dollar
 import Keys
 
-enum DiscoverService {
+enum DiscoverService : Moya.TargetType {
     case discover()
 }
 
-extension DiscoverService: TargetType {
+extension DiscoverService {
     
     var baseURL: URL {
         return URL(string: "https://api.themoviedb.org/3/")!
@@ -40,23 +38,18 @@ extension DiscoverService: TargetType {
         return ["api_key": CleanRxiOSCinemaKeys().cinemaApiKey]
     }
     
-    var parameters: [String: Any]? {
-        switch self {
-        case .discover():
-            return authParameters()
-        }
+    var headers: [String : String]? {
+        return nil
     }
     
     var task: Task {
-        return .request
+        return .requestParameters(parameters: authParameters(), encoding: URLEncoding.default)
     }
     
     var sampleData: Data {
         switch self {
         case .discover:
             return stubbedResponse("api_discover_response");
-        default:
-            return Data()
         }
     }
     

@@ -1,48 +1,43 @@
 PODS:
-  - Alamofire (4.2.0)
-  - CryptoSwift (0.6.7)
-  - Dollar (6.1.0)
+  - Alamofire (4.5.1)
   - Fakery (2.0.0)
   - Keys (1.0.0)
-  - Kingfisher (3.2.4)
-  - Moya (8.0.0-beta.6):
-    - Moya/Core (= 8.0.0-beta.6)
-  - Moya-ObjectMapper (2.2.1):
-    - Moya-ObjectMapper/Core (= 2.2.1)
-  - Moya-ObjectMapper/Core (2.2.1):
-    - Moya (>= 8.0.0-beta.4)
-    - ObjectMapper (= 2.2.1)
-  - Moya/Core (8.0.0-beta.6):
-    - Alamofire (~> 4.0)
+  - Kingfisher (3.13.1)
+  - Moya (9.0.0):
+    - Moya/Core (= 9.0.0)
+  - Moya-ObjectMapper (2.4.2):
+    - Moya-ObjectMapper/Core (= 2.4.2)
+  - Moya-ObjectMapper/Core (2.4.2):
+    - Moya (~> 9.0)
+    - ObjectMapper (~> 2.2)
+  - Moya/Core (9.0.0):
+    - Alamofire (~> 4.1)
     - Result (~> 3.0)
-  - Nimble (5.1.1)
-  - ObjectMapper (2.2.1)
-  - Quick (1.0.0)
+  - Nimble (7.0.1)
+  - ObjectMapper (2.2.8)
+  - Quick (1.1.0)
   - QuickShotUtils (0.2.0)
-  - Result (3.1.0)
-  - Reusable (3.0.1):
-    - Reusable/Storyboard (= 3.0.1)
-    - Reusable/View (= 3.0.1)
-  - Reusable/Storyboard (3.0.1)
-  - Reusable/View (3.0.1)
-  - RxSwift (3.1.0)
-  - RxTest (3.1.0):
-    - RxSwift (~> 3.0)
-  - SnapKit (3.1.2)
-  - SwiftGen (4.0.1)
+  - Result (3.2.3)
+  - Reusable (4.0.0):
+    - Reusable/Storyboard (= 4.0.0)
+    - Reusable/View (= 4.0.0)
+  - Reusable/Storyboard (4.0.0)
+  - Reusable/View (4.0.0)
+  - RxSwift (3.6.1)
+  - RxTest (3.6.1):
+    - RxSwift (~> 3.6)
+  - SnapKit (3.2.0)
   - Swinject (2.0.0)
   - XCGLogger (4.0.0):
     - XCGLogger/Core (= 4.0.0)
   - XCGLogger/Core (4.0.0)
 
 DEPENDENCIES:
-  - CryptoSwift
-  - Dollar
   - Fakery
   - Keys (from `Pods/CocoaPodsKeys`)
   - Kingfisher
-  - Moya (= 8.0.0-beta.6)
-  - Moya-ObjectMapper (from `https://github.com/ivanbruel/Moya-ObjectMapper`)
+  - Moya
+  - Moya-ObjectMapper
   - Nimble
   - Quick
   - QuickShotUtils (from `https://github.com/pmlbrito/QuickShotUtils.git`)
@@ -50,48 +45,39 @@ DEPENDENCIES:
   - RxSwift
   - RxTest
   - SnapKit
-  - SwiftGen
   - Swinject (= 2.0.0)
   - XCGLogger (~> 4.0.0)
 
 EXTERNAL SOURCES:
   Keys:
     :path: Pods/CocoaPodsKeys
-  Moya-ObjectMapper:
-    :git: https://github.com/ivanbruel/Moya-ObjectMapper
   QuickShotUtils:
     :git: https://github.com/pmlbrito/QuickShotUtils.git
 
 CHECKOUT OPTIONS:
-  Moya-ObjectMapper:
-    :commit: 2c82539c7189a0a1bef360289a06090a5f56d5b8
-    :git: https://github.com/ivanbruel/Moya-ObjectMapper
   QuickShotUtils:
-    :commit: 7ca3976bc5d1436c6d314ed745b49df81919c5c8
+    :commit: fead432ac4dad1819058d034d09e1a319b4ef421
     :git: https://github.com/pmlbrito/QuickShotUtils.git
 
 SPEC CHECKSUMS:
-  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
-  CryptoSwift: 685ae257941e5447474348a2b545583e1a16b573
-  Dollar: 0a9883680f2c1104adf0d19b827c3be71d3e3121
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   Fakery: 97b99c23937d2e025d9135c75e2b17351ccd5031
   Keys: 9c35bf00f612ee1d48556f4a4b9b4551e224e90f
-  Kingfisher: 8d80f39da403cd9c9ee11984e1655f4d6a566cdb
-  Moya: a29e2503a0c5067d462ba2f07cc6b6b1f3fc172d
-  Moya-ObjectMapper: 6852b17a8971dd9f614322ace8d36a4e6f14ba5c
-  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
-  ObjectMapper: 41e43e1a89f8060ef5ea5d04ba852e269a621d68
-  Quick: 8024e4a47e6cc03a9d5245ef0948264fc6d27cff
+  Kingfisher: ed9707a409cc47fddafbcd12a43a9757e3600af5
+  Moya: cf5e6ee93af526532f92614004b8ad2ea60fd845
+  Moya-ObjectMapper: 96cde46cc673000dc45dde7c476b2d53d59f0159
+  Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
+  ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
+  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
   QuickShotUtils: 2c60abe5f4e291b6c12c871eaea48f691f47d82c
-  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
-  Reusable: 5362d10271ca8316b104698a21e90498f47e8339
-  RxSwift: 83ff553e7593fdfdcb2562933a64c0284dffdadc
-  RxTest: 661e33b5022682961784da03cf79c175fcc4bd64
-  SnapKit: 12b24f569cb7c143acc9c22b9d91b23e7b1c84a2
-  SwiftGen: 04bbc1fb69add82a7a471380dfbdd00b45912d17
+  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
+  Reusable: 98e5fff1e0e2e00872199699b276dde08ee56c07
+  RxSwift: f9de85ea20cd2f7716ee5409fc13523dc638e4e4
+  RxTest: 1d00348a7848c91ab5bf5d197d2378aa6b2bb356
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   Swinject: 2e964a80d70ab09b3949c99032711f89147bfd60
   XCGLogger: 38063ea89b4c8b23232d18efd2e12eb0005f3ea4
 
-PODFILE CHECKSUM: 195a8012b491087b0ab450c38684a966fe5f00a1
+PODFILE CHECKSUM: 48328bb01353b045c963efecfdde73f3a7462afd
 
 COCOAPODS: 1.2.0

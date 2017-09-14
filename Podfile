@@ -10,40 +10,30 @@ target 'CleanRxiOSCinema' do
     ]}
 
   # Pods for Cinema
-   pod 'SwiftGen'
    pod 'RxSwift'
-   pod 'Moya-ObjectMapper', :git => 'https://github.com/ivanbruel/Moya-ObjectMapper'
-   pod 'CryptoSwift'
-   pod 'Dollar'
+   pod 'Moya-ObjectMapper'
    pod 'Kingfisher'
    pod 'Reusable'
    pod 'XCGLogger', '~> 4.0.0'
-   pod 'Moya', '8.0.0-beta.6'
+   pod 'Moya'
    pod 'Swinject', '2.0.0'
    pod 'QuickShotUtils', :git => 'https://github.com/pmlbrito/QuickShotUtils.git'
    pod 'SnapKit'
-   pod 'Kingfisher'
-   pod 'Swinject', '2.0.0'
 
 end
 
 target 'CleanRxiOSCinemaTests' do
     use_frameworks!
     
-    pod 'SwiftGen'
     pod 'RxSwift'
-    pod 'Moya-ObjectMapper', :git => 'https://github.com/ivanbruel/Moya-ObjectMapper'
-    pod 'CryptoSwift'
-    pod 'Dollar'
+    pod 'Moya-ObjectMapper'
     pod 'Kingfisher'
     pod 'Reusable'
     pod 'XCGLogger', '~> 4.0.0'
-    pod 'Moya', '8.0.0-beta.6'
+    pod 'Moya'
     pod 'Swinject', '2.0.0'
     pod 'QuickShotUtils', :git => 'https://github.com/pmlbrito/QuickShotUtils.git'
     pod 'SnapKit'
-    pod 'Kingfisher'
-    pod 'Swinject', '2.0.0'
     
     pod 'Quick'
     pod 'Nimble'

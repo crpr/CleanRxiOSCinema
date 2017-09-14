@@ -9,16 +9,16 @@
 import Foundation
 import ObjectMapper
 
-struct ApiConfigurationResponse {
+struct ApiConfigurationResponse : Mappable {
+    
     var images_configuration: ApiImagesConfiguration?
     var change_keys: [String] = []
-}
-
-extension ApiConfigurationResponse: Mappable {
+    
     init?(map: Map) {}
     
     mutating func mapping(map: Map) {
         images_configuration <- map["images"]
         change_keys <- map["change_keys"]
     }
+    
 }

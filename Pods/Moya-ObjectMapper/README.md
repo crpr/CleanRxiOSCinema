@@ -14,25 +14,19 @@ Due to the fact that most libraries haven't officially released a Swift 3.0 vers
 ## CocoaPods
 
 ```ruby
-pod 'Moya-ObjectMapper', :git => 'https://github.com/ivanbruel/Moya-ObjectMapper'
-pod 'Moya', :git => 'https://github.com/Moya/Moya'
+pod 'Moya-ObjectMapper'
 ```
 
 The subspec if you want to use the bindings over RxSwift.
 
 ```ruby
-pod 'Moya-ObjectMapper/RxSwift', :git => 'https://github.com/ivanbruel/Moya-ObjectMapper'
-pod 'Moya', :git => 'https://github.com/Moya/Moya'
-pod 'RxSwift', :git => 'https://github.com/ReactiveX/RxSwift'
-
+pod 'Moya-ObjectMapper/RxSwift'
 ```
 
-And the subspec if you want to use the bindings over ReactiveCocoa.
+The subspec if you want to use the bindings over ReactiveSwift.
 
 ```ruby
-pod 'Moya-ObjectMapper/ReactiveCocoa', :git => 'https://github.com/ivanbruel/Moya-ObjectMapper'
-pod 'Moya', :git => 'https://github.com/Moya/Moya'
-pod 'ReactiveSwift', :git => 'https://github.com/ReactiveCocoa/ReactiveSwift'
+pod 'Moya-ObjectMapper/ReactiveSwift'
 ```
 
 # Usage
@@ -62,7 +56,7 @@ struct Repository: Mappable {
 }
 ```
 
-## 1. Without RxSwift
+## 1. Without RxSwift and ReactiveSwift
 
 
 ```swift
@@ -98,17 +92,33 @@ GitHubProvider.request(.userRepositories(username), completion: { result in
 
 ```swift
 GitHubProvider.request(.userRepositories(username))
-  .mapArray(Repository)
+  .mapArray(Repository.self)
   .subscribe { event -> Void in
     switch event {
-    case .Next(let repos):
+    case .next(let repos):
       self.repos = repos
-    case .Error(let error):
+    case .error(let error):
       print(error)
-    default:
-      break
+    default: break
     }
   }.addDisposableTo(disposeBag)
+```
+
+
+## 2. With ReactiveSwift
+
+```swift
+GitHubProvider.request(.userRepositories(username))
+  .mapArray(Repository.self)
+  .start { event in
+    switch event {
+    case .value(let repos):
+      self.repos = repos
+    case .failed(let error):
+      print(error)
+    default: break
+    }
+  }
 ```
 
 # Contributing
